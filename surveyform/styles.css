@@ -1,0 +1,151 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*style*/
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: color-darkblue;
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://c4.wallpaperflare.com/wallpaper/531/951/621/digital-digital-art-artwork-illustration-minimalism-hd-wallpaper-preview.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body{
+  font:16px/28px Poppins, sans-serif;
+  background-color:#eaeaea;
+  color:#333;
+}
+.header{
+  margin:30px;
+  text-align:center;
+  color:white;
+}
+.header #title{
+  font-size:30px;
+  font-weight:bold;
+}
+.header #description{
+  font-style:italic;
+}
+.form-group{
+  color:black;
+}
+.main{
+  background-color:rgba(0, 0, 0, 0.5);
+  margin:auto;
+  width:600px;
+  padding:20px;
+  border-radius:10px;
+}
+label, p{
+  color:white;
+  font-size:1rem;
+  letter-spacing:1px;
+}
+span{
+  color:white;
+  font-size:12px;
+}
+.form-control{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 2pt;
+  box-shadow: 0 0 0 1pt purple;
+}
+.form-group{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:10px;
+}
+.input-textarea{
+  min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+  box-sizing:border-box;
+  border-radius:3px;
+}
+.submit-button{
+  background-color:#37af65;
+  color:white;
+  border:none;
+  height:40px;
+  cursor:pointer;
+  border-radius:2px;
+  width:100%;
+}
+
+@media (min-width: 768px){
+  .main{
+   
+    margin:auto;
+  }
+    .header{
+      text-align:center;
+    }
+}
+@media (min-width: 576px){
+  .main{
+ 
+    margin:auto;
+  }
+  .header{
+    text-align:center;
+}
+  }
+

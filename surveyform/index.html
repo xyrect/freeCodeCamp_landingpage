@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Survey Games Form</h1>
+        <p id="description">please fill in the following form, thank you </p>
+      </div>
+      <div class="main">
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" class="form-control" name="fname" placeholder="Enter your name" required />
+          </div> 
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="femail" class="form-control" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="age">Age<span class="clue">(optional)</span></label>
+            <input type="number" id="number" min="13" max="99" class="form-control" placeholder="Age"/>
+          </div>
+          <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Select current role</option>
+                  <option value="student">Student</option>
+                  <option value="job">Full Time Job</option>
+                  <option value="learner">Full Time Learner</option>
+                  <option value="preferNo">Prefer not to say</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+          <div class="form-group">
+            <p>When will you play games?</p>
+            <label>
+              <input name="playing" type="radio" value="every day" class="input-radio" checked />
+              Every Day
+            </label>
+            <label>
+              <input name="playing" type="radio" value="working days" class="input-radio" />
+              Working Days
+            </label>
+            <label>
+              <input name="playing" type="radio" value="weekend" class="input-radio" />
+              Weekend
+            </label>
+          </div>
+          <div class="form-group">
+            <p>Your Favorite Game Genre <span class="clue">(check all that apply) </span></p>
+            <label>
+              <input name="genre" type="checkbox" value="action" class="input-checkbox" >
+              Action 
+            </label>
+            <label>
+              <input name="genre" type="checkbox" value="adventure" class="input-checkbox" >
+              Adventure
+            </label>
+            <label>
+              <input name="genre" type="checkbox" value="fighting" class="input-checkbox" >
+              Fighting
+            </label>
+            <label>
+              <input name="genre" type="checkbox" value="fps" class="input-checkbox" >
+              First Person Shooter (FPS)
+            </label>
+            <label>
+              <input name="genre" type="checkbox" value="tps" class="input-checkbox" >
+              Third Person Shooter (TPS)
+            </label>
+            <label>
+              <input name="genre" type="checkbox" value="rts" class="input-checkbox" >
+              Real Time Strategy (RTS)
+            </label>
+            <label>
+              <input name="genre" type="checkbox" value="rpg" class="input-checkbox" >
+              Role Playing Game (RPG)
+            </label>
+            <label>
+              <input name="genre" type="checkbox" value="simulation" class="input-checkbox" >
+              Simulation
+            </label>
+            <label>
+              <input name="genre" type="checkbox" value="sport" class="input-checkbox" >
+              Sport 
+            </label>
+            <label>
+              <input name="genre" type="checkbox" value="racing" class="input-checkbox" >
+              Racing
+            </label>
+            <label>
+              <input name="genre" type="checkbox" value="multiplayer" class="input-checkbox" >
+              Multiplayer
+            </label>
+          </div>
+          <div class="form-group">
+            <p>Any comments or suggestions</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
